@@ -32,6 +32,7 @@ Due to the license issue of [MIMIC](https://mimic.mit.edu) and [i2b2](https://i2
 
 <details>
 <summary>Environment Setup</summary>
+
 ```
 conda create -n camel python=3.9 -y
 conda activate camel
@@ -39,6 +40,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 pip install pandarallel pandas jupyter numpy datasets sentencepiece openai
 pip install git+https://github.com/huggingface/transformers.git@871598be552c38537bc047a409b4a6840ba1c1e4
 ```
+
 </details>
 
 <details>
