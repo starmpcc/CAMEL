@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
+	<link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" />
+	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
+	<updated>2023-05-09T14:09:58+00:00</updated>
+	<id>http://localhost:4000/atom.xml</id>
+	<title>CAMEL | Clinically Adapted Model Enhanced from LLaMA</title>
+	<subtitle>Clinically Adapted Model Enhanced from LLaMA</subtitle>
+	<author>
+		<name>Sunjun Kweon, Junu Kim</name>
+					
+	</author>
+	<rights>(c) 2023, Sunjun Kweon, Junu Kim</rights>
+	
+	<logo>https://github.com/starmpcc.png</logo></feed>

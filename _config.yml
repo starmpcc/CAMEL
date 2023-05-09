@@ -1,0 +1,105 @@
+remote_theme: dieghernan/chulapa
+
+# Find errors on this file with http://www.yamllint.com/
+
+# Chulapa docs: https://dieghernan.github.io/chulapa/docs/02-config
+
+# A. Site Settings /SEO options
+# Overall options for your site, would affect your site SEO
+# Default values are explained
+locale                  : en-US    #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
+title                   : CAMEL    #default["repository_name"]
+title_separator         :     #default [" | "]
+subtitle                : Clinically Adapted Model Enhanced from LLaMA    #default [your-repository-tagline]  
+description             : Clinically Adapted Model Enhanced from LLaMA #default [your-repository-tagline]
+url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
+baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+words_per_minute        :     #default[200]
+timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# SEO
+og_image                :     #default[author.avatar (see below)] or [github-avatar]
+twitter_site            :     #Avoid @
+author:
+  name                  :  Sunjun Kweon, Junu Kim   # Name Surname Company
+  avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
+  location              :  "Seongnam, South Korea"   # New York, USA 
+#  links:                
+#    - url:  #A link or email: https://twitter.com/jack, mail@example.com
+#      icon: # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/
+#    - url:  # Another link
+#      icon: # Anothet FontAwesome code
+
+footer:
+  links:
+    - label : Repo on Github # Label
+      icon  : fab fa-github # Fontawesome 5 icon
+      url   : https://github.com/starmpcc/CAMEL # A link or email: https://twitter.com/jack, mail@example.com
+  copyright: # default is © <year> <name> 
+  
+# C. Theme Settings
+# Google Fonts https://fonts.google.com/, add as many as you need
+googlefonts:
+ # - url : # 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+
+# Theme and colors
+chulapa-skin: 
+  highlight     :  # default["default"]
+  skin         :  academia # Optional predefined skins
+  autothemer    :  true # Bool: Use autotheming
+  vars          :    
+    primary     : lightskyblue #default ["#007bff"] - Bootstrap blue
+    
+
+
+
+
+
+# XX. Other settings - no need to modify
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  blanklines: true
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+
+# Exclude these files from production site
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor
+
+include:
+ - _pages
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  footnote_backlink: '&uarr;'
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
