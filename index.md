@@ -17,6 +17,10 @@ tr, th {
 <div align="center"><b>CAMEL</b> from Bing Image Creator</div>
 </p>
 
+<div class="text-center my-4">
+  <a class="btn btn-lg btn-dark mx-1" href="https://starmpcc-camel-demo-demo-i7ajms.streamlit.app/" role="button">Demo Link</a>
+</div>
+
 We present **CAMEL**, **C**linically **A**dapted **M**odel **E**nhanced from **L**LaMA. As LLama for its foundation, **CAMEL** is further pre-trained on MIMIC-III, MIMIC-IV, and i2b2 clinical notes and fine-tuned over clinical instructions. Our preliminary evaluation with GPT-4 assessment, demonstrates that **CAMEL** achieves over 96% of the quality of OpenAI's GPT-3.5 (see Figure 1). In accordance with the data usage policies of our source data, both our instruction dataset and model will be published on PhysioNet with credentialized access. To facilitate replication, we will also release all code, allowing individual healthcare institutions to reproduce our model using their own clinical notes.
 
 <p align='center'>
