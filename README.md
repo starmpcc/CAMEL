@@ -10,6 +10,7 @@
 
 
 ### [**Our Blog Post**](https://starmpcc.github.io/CAMEL)
+### [**Our Demo**](https://starmpcc-camel-demo-demo-i7ajms.streamlit.app/)
 
 <br/>
 
