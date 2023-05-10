@@ -1,6 +1,7 @@
-import streamlit as st
-import json
+import random
+
 import pandas as pd
+import streamlit as st
 
 mtsamples = pd.read_json("mtsamples.json")
 
@@ -10,8 +11,12 @@ st.write(
 )
 
 st.markdown("""---""")
-
-note_number = st.slider("Select the clinical note. There are total 105.", 1, 105, 1)
+if "rn" not in st.session_state:
+    st.session_state["rn"] = random.randint(1, 105)
+# rand_idx = random.randint(1, 106)
+note_number = st.slider(
+    "Select the clinical note. There are total 105.", 1, 105, st.session_state["rn"]
+)
 
 
 masked = mtsamples[mtsamples["note_number"] == note_number]
