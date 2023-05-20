@@ -15,7 +15,7 @@
 <br/>
 
 We present **CAMEL**, Clinically Adapted Model Enhanced from LLaMA. As LLaMA for its foundation, **CAMEL** is furtherpre-trained on MIMIC-III and MIMIC-IV clinical notes, and finetuned over clinical instructions (Figure 2). Our preliminary evaluation with GPT-4 assessment, demonstrates that **CAMEL** achieves over 96% of the quality of OpenAI's GPT-3.5 (Figure 1). In accordance with the data usage policies of our source data, both our instruction dataset and model will be published on PhysioNet with credentialized access. To facilitate replication, we will also release all code, allowing individual healthcare institutions to reproduce our model using their own clinical notes.
-For futher detail, please refer our [**blog post**](https://starmpcc.github.io/CAMEL).
+For further detail, please refer our [**blog post**](https://starmpcc.github.io/CAMEL).
 
 <p align='center'>
 <img src="./resources/performance.png" center-align="true" width="70%">
@@ -49,7 +49,7 @@ pip install git+https://github.com/huggingface/transformers.git@871598be552c3853
 
 - Note Preprocessing
   - For each note, we concatenate the category in front of the text.
-  - To prevent test set leakage, we removed 404 overlapping notes from MIMIC-III with [RadQA](https://physionet.org/content/radqa/1.0.0/), [CLIP](https://github.com/asappresearch/clip), [n2c2 2018](https://pubmed.ncbi.nlm.nih.gov/31584655/) datasets for futher evaluation.
+  - To prevent test set leakage, we removed 404 overlapping notes from MIMIC-III with [RadQA](https://physionet.org/content/radqa/1.0.0/), [CLIP](https://github.com/asappresearch/clip), [n2c2 2018](https://pubmed.ncbi.nlm.nih.gov/31584655/) datasets for further evaluation.
   - We concatenate all notes with `<eos>` tokens.
   - `$ python pretraining_preprocess/mimiciii_preproc.py --mimiciii_note_path {MIMICIII_NOTE_PATH} --output_path {OUTPUT_PATH}`
   - `$ python pretraining_preprocess/mimiciv_preproc.py --discharge_note_path {DISCHAGE_NOTE_PATH} --radiology_note_path {RADIOLOGY_NOTE_PATH} --output_path {OUTPUT_PATH}`
