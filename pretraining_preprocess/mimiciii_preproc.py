@@ -7,7 +7,9 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--mimiciii_note_path", type=str, required=True)
     parser.add_argument(
-        "--filter_index_path", type=str, default="mimiciii_filter_index.txt"
+        "--filter_index_path",
+        type=str,
+        default="pretraining_preprocess/mimiciii_filter_index.txt",
     )
     parser.add_argument("--output_path", type=str, required=True)
     return parser.parse_args()
@@ -15,9 +17,9 @@ def parse_args():
 
 def main():
     args = parse_args()
-    notes = pd.read_csv(args.note_path)
+    notes = pd.read_csv(args.mimiciii_note_path)
 
-    with open(args.erase_index_path, "r") as f:
+    with open(args.filter_index_path, "r") as f:
         erase_index = f.readlines()
     erase_index = [int(i) for i in erase_index]
 
