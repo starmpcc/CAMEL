@@ -106,7 +106,7 @@ def recover(
         - If you want to save the recovered weights, set `--path_tuned <your_path_tuned>`.
             Next time you can load the recovered weights directly from `<your_path_tuned>`.
     """
-    revision = "pr/7" if "decapoda_research/llama" in path_raw else "main"
+    revision = "pr/7" if "decapoda-research/llama" in path_raw else "main"
 
     model_raw: transformers.PreTrainedModel = (
         transformers.AutoModelForCausalLM.from_pretrained(
