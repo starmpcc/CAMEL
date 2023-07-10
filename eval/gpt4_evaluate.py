@@ -1,6 +1,6 @@
 import argparse
 import json
-import random
+import os
 
 import openai
 import pandas as pd
