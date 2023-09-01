@@ -8,12 +8,13 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-# NEW MODEL ANNOUNCEMENT
-We are proud to introduce Asclepius, a more advanced clinical large language model.
+## UPDATE: NEW MODEL ANNOUNCEMENT
+We are proud to introduce **Asclepius**, a more advanced clinical large language model.
 As this model was trained on synthetic clinical notes, it is publicly accessible via Huggingface.
 If you are considering using CAMEL, we highly recommend switching to Asclepius instead.
 For more information, please visit this [link](https://github.com/starmpcc/Asclepius).
 
+----
 
 
 
