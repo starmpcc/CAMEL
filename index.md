@@ -23,6 +23,15 @@ tr, th {
 
 </div>
 
+## UPDATE: New Model Announcement
+
+We are proud to introduce **Asclepius**, a more advanced clinical large language model.
+As this model was trained on synthetic clinical notes, it is publicly accessible via Huggingface. 
+If you are considering using CAMEL, we highly recommend switching to Asclepius instead. For more information, please visit this [link](https://github.com/starmpcc/Asclepius).
+
+----
+
+
 We present **CAMEL**, **C**linically **A**dapted **M**odel **E**nhanced from **L**LaMA. As LLama for its foundation, **CAMEL** is further pre-trained on MIMIC-III and MIMIC-IV clinical notes, and finetuned over clinical instructions (Figure 2). Our preliminary evaluation with GPT-4 assessment, demonstrates that **CAMEL** achieves over 96% of the quality of OpenAI's GPT-3.5 (Figure 1). In accordance with the data usage policies of our source data, both our instruction dataset and model will be published on PhysioNet with credentialized access. To facilitate replication, we will also release all code, allowing individual healthcare institutions to reproduce our model using their own clinical notes.
 
 <p align='center'>
